@@ -14,7 +14,7 @@ fun caesarCipher(text: String, key: Int): String {
         if (index < 26 && offset >= 26) offset -= 26
         else if (offset >= 52) offset -= 26
 
-        if (punctuation.contains(char)) newText.add(char)
+        if (!alphabet.contains(char)) newText.add(char)
         else newText.add(alphabet[offset])
 
     }

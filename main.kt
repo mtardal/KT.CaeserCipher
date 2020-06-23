@@ -15,9 +15,7 @@ fun caesarCipher(text: String, key: Int): String {
 
         if (!alphabet.contains(char)) newText.add(char)
         else newText.add(alphabet[offset])
-
     }
-
 return newText.joinToString(separator = "")
 }
 
